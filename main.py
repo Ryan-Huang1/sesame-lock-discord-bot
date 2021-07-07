@@ -25,6 +25,14 @@ async def status(ctx):
     await ctx.send('status called')
 
 @client.command()
+async def lock(ctx):
+    await ctx.send('lock called')
+
+@client.command()
+async def unlock(ctx):
+    await ctx.send('unlock called')
+
+@client.command()
 async def test(ctx, *, question):
     print('command called')
     await ctx.send(question)
