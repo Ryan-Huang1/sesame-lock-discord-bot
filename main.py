@@ -21,6 +21,10 @@ async def ping(ctx):
     await ctx.send(f'Pong! {round(client. latency * 1000)}ms')
 
 @client.command()
+async def status(ctx):
+    await ctx.send('status called')
+
+@client.command()
 async def test(ctx, *, question):
     print('command called')
     await ctx.send(question)
