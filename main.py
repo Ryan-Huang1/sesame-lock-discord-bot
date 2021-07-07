@@ -7,7 +7,9 @@ from keep_alive import keep_alive
 
 client = commands.Bot(command_prefix = '!')
 
-statusUrl = "https://api.candyhouse.co/public/sesame/"
+statusURL = "https://api.candyhouse.co/public/sesame/00000000-0000-0000-0000-000000000001"
+controlURL = "https://api.candyhouse.co/public/sesame/00000000-0000-0000-0000-000000000001"
+
 
 @client.event
 async def on_ready():
