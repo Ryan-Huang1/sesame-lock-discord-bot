@@ -7,6 +7,8 @@ from keep_alive import keep_alive
 
 client = commands.Bot(command_prefix = '!')
 
+statusUrl = "https://api.candyhouse.co/public/sesame/"
+
 @client.event
 async def on_ready():
   await client.change_presence(activity=discord.Game(name='Sesame Bot | !help'))
