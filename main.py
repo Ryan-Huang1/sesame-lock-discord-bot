@@ -16,5 +16,10 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send(f'Pong! {round(client. latency * 1000)}ms')
 
+@client.command()
+async def test(ctx, *, question):
+    print('command called')
+    await ctx.send(question)
+
 keep_alive()
 client.run(os.getenv('TOKEN'))
